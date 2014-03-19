@@ -19,23 +19,10 @@
 
 
 <SCRIPT type="text/javascript">
-var testV = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
-while (testV < 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == "garnetteam") {
-alert('You Got it Right!');
-window.open('/');
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-}
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
-return " ";
+var thePassword="garnetteam"; 
+    password=prompt('Enter Password',' '); 
+    if (password==thePassword) { alert('Correct Password! Click OK to Enter!'); }
+    else { window.location="http://www.google.com/"; } 
 </SCRIPT>
 </head>
 <body>
